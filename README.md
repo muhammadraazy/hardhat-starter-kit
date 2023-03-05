@@ -1,32 +1,35 @@
-# Sample Hardhat Project
+# Hardhat Starter Kit
+## _my journey to become a blockchain developer is begin here_
+### _this hardhat starter kit would help you to start building blockchain app quickyly_  
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
+## Step to run locally
+### *Clone this repository
 ```shell
+   git clone <this repo url>
+```
 
-# full course on freecodecamp github
-https://github.com/smartcontractkit/full-blockchain-solidity-course-js
+### *Installing all required packages
+```shell
+   npm install
+```
+### *Compile Your Contract
+- compile your smart contract after you write it
+```shell
+  npx hardhat compile
+```
 
-# to see the list of tasks available
-npx hardhat help
+### *Deploy Your Contract
+- deploy it when you're done writing it
+```shell
+    npx hardhat deploy
+```
+- you can also provide the **--network** flag
+```shell
+  npx hardhat deploy --network <localhost> | <testnet> | <mainnet>
+```
 
-# to open console hardhat
-npx hardhat console --network <network>
-
-# for testing
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-
-# use this command to spin up local hardhat environment
-npx hardhat node
-
-# for deploy use this command
-npx hardhat run scripts/deploy.js --network goerli
-npx hardhat run scripts/deploy.js --network hardhat
-
-# use solidity-coverage tools for check un testing smart contract
-npx hardhat coverage
-
+### *Testing Smart Contract
+- after writing test, run this _command_
+```shell
+  npx hardhat test
 ```
